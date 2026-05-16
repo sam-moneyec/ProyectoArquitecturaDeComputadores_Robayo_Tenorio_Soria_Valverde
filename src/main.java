@@ -1,5 +1,9 @@
-public class App {
+
+import fase2.faseDosControlador;
+
+public class main {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-    }
+        faseDosControlador controladorFase2 = new faseDosControlador();
+        controladorFase2.iniciarFaseDos();
+}
 }
