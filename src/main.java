@@ -1,16 +1,16 @@
 
 import fase2.faseDosControlador;
-import fase4.FaseCuatroControlador;
+import fase4.faseCuatroControlador;
 import java.util.Scanner;
 public class main {
-    public static void main(String[] args) throws Exception {
+public static void main(String[] args) throws Exception {
     Scanner sc = new Scanner(System.in);
 
         // LLAMAR LOS METODOS DE LAS FASES
         //fase 1 --->
         faseDosControlador controladorFase2 = new faseDosControlador();
         //fase 3 --->
-        FaseCuatroControlador controladorFase4 = new FaseCuatroControlador();
+        faseCuatroControlador controladorFase4 = new faseCuatroControlador();
 
 
         int OP;

@@ -1,6 +1,6 @@
 package fase4;
 import java.util.Scanner;
-public class FaseCuatroControlador {
+public class faseCuatroControlador {
     public void MostrarFaseCuatro() {
 
         int opcion;
