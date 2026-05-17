@@ -26,7 +26,7 @@ public class faseTresControlador {
 
             System.out.println("ERROR: Overflow.");
             System.out.println("El numero no puede representarse con "
-                    + bits + " bits.");
+                    + bits + " bits.\n");
 
             return;
         }
@@ -34,7 +34,7 @@ public class faseTresControlador {
  
         String resultado = conversion.convertirCa2(numero, bits);
 
-        System.out.println("Representacion en Complemento a Dos:");
+        System.out.println("Representacion en Complemento a Dos: ");
         System.out.println(resultado);
 
 
@@ -42,6 +42,8 @@ public class faseTresControlador {
 
         System.out.println("Verificacion:");
         System.out.println(resultado + " en decimal es: "
-                + decimalOriginal);
+                + decimalOriginal + "\n");
+        
     }
+    
 }

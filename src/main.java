@@ -1,15 +1,13 @@
 //
+import fase1.faseUnoControlador;
 import fase2.faseDosControlador;
 import fase3.faseTresControlador;
 import fase4.faseCuatroControlador;
 import java.util.Scanner;
-
-import fase1.faseUnoControlador;
 public class main {
 public static void main(String[] args) throws Exception {
     Scanner sc = new Scanner(System.in);
 
-        // LLAMAR LOS METODOS DE LAS FASES
         faseUnoControlador controladorFase1 = new faseUnoControlador();
         faseDosControlador controladorFase2 = new faseDosControlador();
         faseTresControlador controladorFase3 = new faseTresControlador();
@@ -35,7 +33,7 @@ System.out.println("===============================");
         System.out.println("3. FASE ARITMÉTICA BINARIA Y COMPLEMENTO A DOS");
         System.out.println("4. FASE SUMA Y RESTA BINARIA COMPLEMENTO 2");
         System.out.println("9. SALIR");
-          System.out.printf("SELECCIONE LA FASE QUE DESEA EJECUTAR:");
+        System.out.printf("SELECCIONE LA FASE QUE DESEA EJECUTAR:");
         OP = sc.nextInt();
 
         switch (OP) {

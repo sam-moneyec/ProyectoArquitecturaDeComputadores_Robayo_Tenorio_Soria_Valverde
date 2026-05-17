@@ -13,9 +13,9 @@ public class faseDosControlador {
 
     do{
         System.out.println("===== CONVERSION DE OTRAS BASES A DECIMAL - MENU =====");
-        System.out.println("1. Convertir un número en base 2 a decimal");
-        System.out.println("2. Convertir un número en base 8 a decimal");
-        System.out.println("3. Convertir un número en base 16 a decimal");
+        System.out.println("1. Convertir un número en base 2 (binario) a decimal");
+        System.out.println("2. Convertir un número en base 8 (octal) a decimal");
+        System.out.println("3. Convertir un número en base 16 (hexadecimal) a decimal");
         System.out.println("0. Salir");
         System.out.print("Seleccione una opción: ");
         opcion = sc.nextInt();
@@ -28,7 +28,7 @@ public class faseDosControlador {
                 int resultadoBinario = conversion.convertirDecimal(numeroEnTexto, base);
                 if (resultadoBinario != -1) {
                     System.out.println("El número " + numeroEnTexto + " en base " + base + " es igual a "
-                            + resultadoBinario + " en decimal.");
+                            + resultadoBinario + " en decimal.\n");
                 } else {
                     System.out.println("Número inválido para la base " + base);
                 }
@@ -40,7 +40,7 @@ public class faseDosControlador {
                 int resultadoOctal = conversion.convertirDecimal(numeroEnTexto, base);
                 if (resultadoOctal != -1) {
                     System.out.println("El número " + numeroEnTexto + " en base " + base + " es igual a "
-                            + resultadoOctal + " en decimal.");
+                            + resultadoOctal + " en decimal.\n");
                 } else {
                     System.out.println("Número inválido para la base " + base);
                 }
@@ -53,7 +53,7 @@ public class faseDosControlador {
                 int resultadoHexadecimal = conversion.convertirDecimal(numeroEnTexto, base);
                 if (resultadoHexadecimal != -1) {
                     System.out.println("El número " + numeroEnTexto + " en base " + base + " es igual a "
-                            + resultadoHexadecimal + " en decimal.");
+                            + resultadoHexadecimal + " en decimal.\n");
                 } else {
                     System.out.println("Número inválido para la base " + base);
                 }
@@ -63,12 +63,11 @@ public class faseDosControlador {
                 System.out.println("Saliendo del programa...");
                 break;
             default:
-                System.out.println("Opción inválida. Por favor, seleccione una opción válida.");
+                System.out.println("Opción inválida. Por favor, seleccione una opción válida.\n");
                 break;
 
         }
     } while (opcion != 0);  
-
     }
 
 }

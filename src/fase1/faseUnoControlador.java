@@ -29,7 +29,7 @@ public class faseUnoControlador {
                     numero = scanner.nextInt();
 
                     if (numero < 0) {
-                        System.out.println("Error: el numero debe ser positivo.");
+                        System.out.println("Error: el numero debe ser positivo.\n");
                     } else {
                         System.out.println("Binario: " + conversor.convertirBinario(numero));
                     }
@@ -40,7 +40,7 @@ public class faseUnoControlador {
                     numero = scanner.nextInt();
 
                     if (numero < 0) {
-                        System.out.println("Error: el numero debe ser positivo.");
+                        System.out.println("Error: el numero debe ser positivo.\n");
                     } else {
                         System.out.println("Octal: " + conversor.convertirOctal(numero));
                     }
@@ -51,7 +51,7 @@ public class faseUnoControlador {
                     numero = scanner.nextInt();
 
                     if (numero < 0) {
-                        System.out.println("Error: el numero debe ser positivo.");
+                        System.out.println("Error: el numero debe ser positivo.\n");
                     } else {
                         System.out.println("Hexadecimal: " + conversor.convertirHexadecimal(numero));
                     }
