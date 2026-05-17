@@ -4,7 +4,7 @@ public class faseCuatroControlador {
     public void MostrarFaseCuatro() {
 
         int opcion;
-     OperacionAvanzada op = new OperacionAvanzada();
+     operacionAvanzada op = new operacionAvanzada();
      Scanner sc = new Scanner(System.in);
 
         do {

@@ -1,9 +1,9 @@
 package fase4;
 
-public class OperacionAvanzada {
+public class operacionAvanzada {
    //constructores
 
-   public OperacionAvanzada() {
+   public operacionAvanzada() {
 }
 
 //Primer paso convetir los número decimales a binarios de 8 bits

@@ -84,8 +84,4 @@ public class faseUnoControlador {
         } while (opcion != 5);
     }
 
-    public static void main(String[] args) {
-        faseUnoControlador controlador = new faseUnoControlador();
-        controlador.ejecutar();
-    }
 }
