@@ -1,5 +1,6 @@
 
 import fase2.faseDosControlador;
+import fase3.faseTresControlador;
 import fase4.faseCuatroControlador;
 import java.util.Scanner;
 public class main {
@@ -9,7 +10,7 @@ public static void main(String[] args) throws Exception {
         // LLAMAR LOS METODOS DE LAS FASES
         //fase 1 --->
         faseDosControlador controladorFase2 = new faseDosControlador();
-        //fase 3 --->
+        faseTresControlador controladorFase3 = new faseTresControlador();
         faseCuatroControlador controladorFase4 = new faseCuatroControlador();
 
 
@@ -46,7 +47,7 @@ System.out.println("===============================");
                 break;
             case 3:
                 System.out.println("***************************************************");
-                //fase 3
+                controladorFase3.iniciarFaseTres();
                 break;
             case 4:
                 System.out.println("***************************************************");
