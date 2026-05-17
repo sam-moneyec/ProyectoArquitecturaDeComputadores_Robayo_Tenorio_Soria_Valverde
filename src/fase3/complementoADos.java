@@ -1,5 +1,5 @@
 package fase3;
-
+///
 public class complementoADos {
 
     public boolean verificarRango(int numero, int bits) {
