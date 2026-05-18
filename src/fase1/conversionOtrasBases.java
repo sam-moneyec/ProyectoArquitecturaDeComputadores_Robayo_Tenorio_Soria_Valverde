@@ -14,7 +14,7 @@ public class conversionOtrasBases {
         return convertirDesdeDecimal(numeroDecimal, 16);
     }
 
-    private String convertirDesdeDecimal(int numeroDecimal, int base) {
+    public String convertirDesdeDecimal(int numeroDecimal, int base) {
         if (numeroDecimal < 0) {
             return "Error";
         }

@@ -1,14 +1,17 @@
 package fase4;
-
+import fase1.conversionOtrasBases;
+import fase2.conversionDecimal;
 public class operacionAvanzada {
    //constructores
 
    public operacionAvanzada() {
 }
+ conversionOtrasBases decimalBinario = new conversionOtrasBases();
+ conversionDecimal conversionDecimal = new conversionDecimal();
 
 public String decimalABinario(int numero) {
 
-        String binario = Integer.toBinaryString(numero); 
+        String binario = decimalBinario.convertirDesdeDecimal(numero, 2);
         while (binario.length() < 8) {
             binario = "0" + binario;
         }
@@ -25,9 +28,10 @@ public String decimalABinario(int numero) {
             }
         }
         String invertido = new String(bits);
-        int numero = Integer.parseInt(invertido, 2);
+
+        int numero = conversionDecimal.convertirDecimal(binario, 2);
         numero = numero + 1;
-        String complemento = Integer.toBinaryString(numero);
+        String complemento = decimalABinario(numero);
         while (complemento.length() < 8) {
             complemento = "0" + complemento;
         }
@@ -42,12 +46,12 @@ public String decimalABinario(int numero) {
     String bin1 = decimalABinario(num1);
     String bin2 = decimalABinario(num2);
 
-    int decimal1 = Integer.parseInt(bin1, 2);
-    int decimal2 = Integer.parseInt(bin2, 2);
+    int decimal1 = conversionDecimal.convertirDecimal(bin1, 2);
+    int decimal2 = conversionDecimal.convertirDecimal(bin2, 2);
 
     int suma = decimal1 + decimal2;
 
-    String resultado = Integer.toBinaryString(suma);
+    String resultado = decimalABinario(suma);
 
     while (resultado.length() < 8) {
         resultado = "0" + resultado;
@@ -69,12 +73,12 @@ public String restar(int num1, int num2) {
 
     String comp2 = complemento2(bin2);
 
-    int decimal1 = Integer.parseInt(bin1, 2);
-    int decimal2 = Integer.parseInt(comp2, 2);
+    int decimal1 = conversionDecimal.convertirDecimal(bin1, 2);
+    int decimal2 = conversionDecimal.convertirDecimal(comp2, 2);
 
     int suma = decimal1 + decimal2;
 
-    String resultado = Integer.toBinaryString(suma);
+    String resultado = decimalABinario(suma);
 
     if (resultado.length() > 8) {
         resultado = resultado.substring(resultado.length() - 8);
