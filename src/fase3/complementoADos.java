@@ -1,6 +1,11 @@
 package fase3;
+import fase1.conversionOtrasBases;
+import fase2.conversionDecimal;
 
 public class complementoADos {
+    conversionOtrasBases decimalBinario = new conversionOtrasBases();
+    conversionDecimal conversionDecimal = new conversionDecimal();
+
 
     public boolean verificarRango(int numero, int bits) {
 
@@ -14,7 +19,7 @@ public class complementoADos {
   
         if (numero >= 0) {
 
-            String binario = Integer.toBinaryString(numero);
+            String binario = decimalBinario.convertirDesdeDecimal(numero, 2);
 
             while (binario.length() < bits) {
                 binario = "0" + binario;
@@ -27,7 +32,7 @@ public class complementoADos {
 
             int valorAbsoluto = Math.abs(numero);
 
-            String binario = Integer.toBinaryString(valorAbsoluto);
+            String binario = decimalBinario.convertirDesdeDecimal(valorAbsoluto, 2);
 
             while (binario.length() < bits) {
                 binario = "0" + binario;
@@ -44,11 +49,11 @@ public class complementoADos {
                 }
             }
 
-            int decimalTemporal = Integer.parseInt(complementoUno, 2);
+            int decimalTemporal = conversionDecimal.convertirDecimal(complementoUno, 2);
 
             decimalTemporal += 1;
 
-            String complementoDos = Integer.toBinaryString(decimalTemporal);
+            String complementoDos = decimalBinario.convertirDesdeDecimal(decimalTemporal, 2);
 
             if (complementoDos.length() > bits) {
                 complementoDos = complementoDos.substring(complementoDos.length() - bits);
@@ -68,7 +73,7 @@ public class complementoADos {
 
         if (ca2.charAt(0) == '0') {
 
-            return Integer.parseInt(ca2, 2);
+            return conversionDecimal.convertirDecimal(ca2, 2);
         }
 
         else {
@@ -84,7 +89,7 @@ public class complementoADos {
                 }
             }
 
-            int decimal = Integer.parseInt(complementoUno, 2);
+            int decimal = conversionDecimal.convertirDecimal(complementoUno, 2);
 
             decimal += 1;
 
